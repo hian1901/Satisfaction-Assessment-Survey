@@ -1,7 +1,8 @@
-# Satisfaction-Assessment-Survey
-# 🧼 Advanced SQL Data Cleaning & String Transformation Project
+## 📊 End-to-End SQL Project: Data Cleaning & Customer Satisfaction Analytics
 ## 📌 Project Overview
-This project focuses on transforming messy, unstructured operational data into an analysis-ready dataset using **MySQL**. The pipeline addresses critical data quality issues: redundant duplicates, trailing whitespaces, unstandardized text casing, missing values, and concatenated fields that require advanced string parsing.
+This project presents a comprehensive, end-to-end data analytics workflow using **MySQL**. It covers two core phases:
+1. **Data Cleaning & Quality Assurance:** Transforming messy, unstructured operational and customer subscription data into an analysis-ready schema by resolving duplicates, trailing whitespaces, mixed date structures, missing values, and parsing composite strings.
+2. **Exploratory Data Analysis (EDA) & Business Insights:** Conducting customer sentiment segmentation to diagnose delivery latency bottlenecks across specific geographic regions and delivering actionable retention strategies.
 ---
 ## 🛠 Core SQL Toolkit Applied
 * **Schema Management:** `ALTER TABLE` (`ADD COLUMN`, `MODIFY COLUMN`, `DROP COLUMN`)
