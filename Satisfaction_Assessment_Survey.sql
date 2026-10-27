@@ -78,3 +78,31 @@ end;
 
 select distinct freetext_response , trim(freetext_response) from raw_data1_copy;
 update raw_data1_copy set freetext_response =  trim(freetext_response);
+-- -------------------------------
+select * 
+from raw_data1_copy;
+select service_feedback, 
+count(customer_id) as total,
+round((count(customer_id)) * 100 / (sum(count(customer_id))over()),2)
+from raw_data1_copy
+group by service_feedback;
+select service_feedback, visit_frequency,
+count(customer_id) as total
+from raw_data1_copy
+group by service_feedback, visit_frequency;
+select service_feedback, product_quality,
+count(customer_id) as total
+from raw_data1_copy
+group by service_feedback,product_quality;
+select service_feedback ,
+freetext_response
+from raw_data1_copy
+where service_feedback = 'Poor' ;
+select service_feedback, recommend_to_friend,
+count(customer_id) as total
+from raw_data1_copy
+group by service_feedback, recommend_to_friend;
+select service_feedback, rewards_member,
+count(customer_id) as total
+from raw_data1_copy
+group by service_feedback, rewards_member;
